@@ -1,0 +1,402 @@
+a
+a
+a
+a
+a
+a
+a
+AI
+Design a complete web + mobile SaaS UI for an app called **CheckWise**.
+
+The app helps users check online products (Amazon, Temu, TikTok Shop, AliExpress) BEFORE buying, using AI.  
+Primary audience: Arabic-speaking users, so use **RTL layout** but keep labels readable and modern.
+
+🎨 Style:
+- Clean, modern SaaS look
+- Light theme
+- Rounded corners (16px)
+- Soft shadows
+- Components and Auto Layout
+- Responsive for desktop and mobile
+
+🎨 Colors:
+- Primary Blue: #3B82F6
+- Secondary Purple: #8B5CF6
+- Light Gray Background: #F3F4F6
+- White: #FFFFFF
+- Dark Text: #111827
+- Soft Gray Text: #6B7280
+- Success Green: #16A34A
+- Warning Yellow: #F59E0B
+- Danger Red: #DC2626
+
+🖋 Typography:
+- Use a clean Sans-Serif that works well with Arabic (e.g., Inter / system)
+- Titles bold
+- Body text medium/regular
+
+📄 Screens to design:
+
+1) **Landing Page (Web)**
+- Header with:
+  - Logo "CheckWise" (gradient Blue → Purple)
+  - Menu links: "كيف يعمل؟" – "الأسعار" – "تسجيل الدخول"
+  - CTA button: "ابدأ مجانًا"
+- Hero section:
+  - Big title in Arabic: "افحص المنتج قبل ما تشتريه."
+  - Subtitle text explaining: "CheckWise يحلل التقييمات والإعلانات ويعطيك نسبة ثقة بالمنتج قبل ما تدفع."
+  - Primary button: "جرّب الفحص الأول مجاناً"
+  - Secondary button: "شاهد مثال"
+  - On the side: mockup of the dashboard with trust score, product image, pros/cons
+- Features section (3–4 cards):
+  - "تحليل التقييمات الحقيقية"
+  - "كشف الإعلانات المبالغ فيها"
+  - "نسبة ثقة واضحة"
+  - "نظام فحوص شهري (Credits)"
+- Pricing section:
+  - 3 pricing cards (Basic / Standard / Pro)
+  - Each shows:
+    - Price per month
+    - Number of checks included (10 / 30 / 100)
+    - A CTA button
+- Footer:
+  - Links: About, Terms, Privacy
+  - © 2025 CheckWise
+
+2) **Signup / Login Page**
+- Simple card centered on a light background
+- Tabs or toggle for "تسجيل الدخول" and "إنشاء حساب"
+- Fields:
+  - Email
+  - Password
+- Optional: "تسجيل باستخدام Google"
+- Gradient CTA button
+
+3) **Main Dashboard (After login)**
+- Layout:
+  - Left Sidebar (RTL orientation but visually on the right if needed)
+  - Main content area
+- Sidebar menu items:
+  - الرئيسية
+  - فحص منتج جديد
+  - السجل
+  - الرصيد والخطط
+  - الإعدادات
+- Top of main area: welcome text "أهلاً، Bakri 👋"
+- KPI cards row:
+  - "الرصيد المتبقي" (e.g. 18 / 30)
+  - "عدد الفحوص هذا الشهر" (e.g. 22)
+  - "منتجات مشكوك فيها" (e.g. 5)
+- Big button: "فحص منتج جديد"
+- Underneath: table showing last checks:
+  - التاريخ
+  - صورة المنتج + اسمه
+  - الموقع (Amazon / Temu / TikTok)
+  - نسبة الثقة (with colored badge)
+  - النتيجة (موثوق / تحذير / غير موثوق)
+
+4) **New Check Page (فحص منتج جديد)**
+- Card centered with:
+  - Title: "فحص منتج جديد"
+  - Field: "ألصق رابط المنتج هنا"
+  - Dropdown: "نوع الموقع" (Amazon, Temu, TikTok Shop, AliExpress, Other)
+  - Info text: "سيتم خصم 1 فحص من رصيدك."
+  - Primary button: "افحص المنتج الآن"
+- Small text showing "الرصيد المتبقي: 18 / 30"
+
+5) **Check Result Page**
+- Layout:
+  - Top: Product image, title, price, source (logo of Amazon/Temu/etc.)
+  - Big trust score circle in the middle:
+    - e.g. "نسبة الثقة: 82%" – green if high, yellow if medium, red if low
+  - Two columns:
+    - Left (or top in mobile): "نقاط إيجابية" list
+    - Right: "نقاط سلبية متكررة"
+  - A summary message:
+    - If score high: "ننصح بالشراء 👍"
+    - If medium: "يمكن الشراء لكن انتبه للنقاط التالية ⚠"
+    - If low: "لا ننصح بالشراء ❌"
+  - Button: "شاهد بدائل أفضل" (placeholder)
+  - Button: "رجوع إلى السجل"
+
+6) **History Page (سجل الفحوص)**
+- Table with:
+  - التاريخ
+  - اسم المنتج + صورة مصغرة
+  - الموقع
+  - نسبة الثقة (colored pill)
+  - الحالة (موثوق / تحذير / غير موثوق)
+- Filter or search bar on top
+
+7) **Credits & Plans Page**
+- Top section:
+  - Card showing:
+    - "الخطة الحالية: Standard"
+    - "الرصيد المتبقي: 18 / 30"
+    - Progress bar
+    - Text: "يتجدد الرصيد بعد 5 أيام"
+- Middle section:
+  - Three plan cards (Basic / Standard / Pro)
+    - Basic: 10 فحوص – 3.99€/شهر
+    - Standard: 30 فحص – 6.99€/شهر
+    - Pro: 100 فحص – 12.99€/شهر
+    - Highlight Standard as "الأكثر شيوعًا"
+- Bottom section:
+  - "اشترِ فحوص إضافية"
+  - Options: 10 / 20 / 50 checks with buttons
+
+8) **Settings Page**
+- Sections:
+  - "الملف الشخصي": Name, Email
+  - "اللغة": اختيار عربي / إنجليزي
+  - "التنبيهات": toggle switches for email/notifications
+  - "إدارة الحساب": زر حذف الحساب (danger red button)
+
+9) **Mobile versions**
+- Create mobile-friendly versions for:
+  - Dashboard
+  - New Check
+  - Result
+  - Credits
+- Use stacked layouts, large tap targets, slide-out sidebar menu.
+
+🧩 Components:
+- Buttons: primary (gradient), secondary (outline)
+- Cards
+- Sidebar
+- Tables
+- Progress bar
+- Trust score badge (green/yellow/red)
+- Plan cards
+- Tags/pills for statuses
+
+Please generate a full high-fidelity UI kit + screens for this app, using RTL layout for Arabic and consistent spacing, shadows, and typography.
+I'll create a complete RTL SaaS UI for CheckWise with all the screens you specified. This will include a landing page, authentication, dashboard, and all functional pages with both desktop and mobile responsive layouts.
+
+
+
+Let me start by implementing the comprehensive UI system:
+
+Perfect! I've created a comprehensive CheckWise SaaS UI with full RTL support for Arabic. The application includes:
+
+
+
+Screens Created:
+
+
+Landing Page - Full hero section with features, pricing cards (Basic/Standard/Pro), and footer
+Auth Page - Unified login/signup with tabs and Google OAuth option
+Dashboard - KPI cards showing credits, checks this month, suspicious products, and recent checks table
+New Check Page - Simple form to paste product URL and select platform
+Check Result Page - Displays trust score (82%), product details, pros/cons lists, and recommendation
+History Page - Full table of all previous checks with search/filter
+Credits & Plans Page - Current plan display, all pricing tiers, and additional credit purchases
+Settings Page - Profile, language selection, notification toggles, and account management
+
+
+Features:
+
+
+✅ Complete RTL layout for Arabic text
+✅ Responsive design - Works seamlessly on mobile and desktop
+✅ Mobile sidebar - Slide-out menu with overlay on mobile
+✅ Trust Badge System - Color-coded badges (green/yellow/red) based on scores
+✅ Gradient buttons - Blue to purple gradients matching brand
+✅ Rounded corners (16px as requested)
+✅ Soft shadows and modern card layouts
+✅ Arabic content throughout the UI
+✅ Custom color scheme with all specified colors
+✅ Reusable components - Sidebar, TrustBadge, etc.
+
+
+
+The app now has a complete flow from landing → auth → dashboard → product checking → results → history management → plan upgrades. All pages are fully responsive and optimized for the Arabic-speaking audience with proper RTL support!
+
+برايك شومحتاج التطبيق ليكون افلض
+برأيي، التطبيق يحتاج هذي التحسينات ليكون أفضل:
+
+
+
+أهم التحسينات:
+
+
+1. Loading States & Animations 🎬
+شاشة تحميل عند فحص المنتج (مع نسبة التقدم)
+رسوم متحركة للانتقالات بين الصفحات
+Skeleton loaders للجداول
+
+
+2. Empty States 📭
+شاشة فارغة جميلة في السجل (لما ما في فحوص)
+رسائل تحفيزية للمستخدمين الجدد
+
+
+3. المنتجات البديلة 🔄
+صفحة تعرض بدائل أفضل للمنتج
+مقارنة بين المنتجات
+
+
+4. Toasts & Notifications 🔔
+رسائل نجاح عند إتمام الفحص
+تنبيهات عند انخفاض الرصيد
+رسائل خطأ واضحة
+
+
+5. تتبع الأسعار 📊
+إشعارات عند انخفاض السعر
+رسم بياني لتاريخ السعر
+
+
+6. مشاركة النتائج 📤
+زر مشاركة النتيجة
+تصدير PDF للتقرير
+
+
+7. Onboarding 🎯
+جولة توضيحية للمستخدمين الجدد
+خطوات إرشادية
+
+
+8. Dark Mode 🌙
+وضع داكن للعيون
+
+
+تبي أنفذ أي من هذي التحسينات؟ أنصحك نبدأ بـ:
+
+Loading states & animations
+Empty states  
+Toast notifications
+صفحة البدائل
+
+
+شو رأيك؟
+
+اوك اعملهم
+تمام! راح أنفذ كل التحسينات. خليني أبدأ:
+
+تمام! خلصنا كل التحسينات! 🎉
+
+
+
+✅ التحسينات اللي تمت إضافتها:
+
+
+1. Loading States & Animations 🎬
+✅ شاشة تحميل متحركة عند فحص المنتج
+✅ Progress bar ديناميكي (0-100%)
+✅ 4 خطوات واضحة مع أيقونات متحركة
+✅ Animations سلسة للانتقال
+
+
+2. Toast Notifications 🔔
+✅ رسائل نجاح عند إتمام الفحص
+✅ تنبيهات عند اختيار الخطة
+✅ إشعارات عند شراء الرصيد
+✅ تنبيهات عند حفظ الإعدادات
+✅ رسائل error واضحة
+✅ دعم RTL كامل للـ toasts
+
+
+3. Empty States 📭
+✅ شاشة فارغة جميلة في السجل
+✅ أيقونة ورسالة تحفيزية
+✅ زر CTA للبدء بأول فحص
+✅ تصميم متناسق مع باقي التطبيق
+
+
+4. صفحة البدائل 🔄
+✅ عرض 3 بدائل أفضل
+✅ مقارنة الأسعار والتوفير
+✅ نسبة الثقة والتقييمات
+✅ Highlights لكل منتج
+✅ شرح لماذا نوصي بهذه البدائل
+✅ Badges للعروض والتوفير
+
+
+5. تحسينات إضافية:
+✅ Smooth transitions بين الصفحات
+✅ Hover effects على الـ cards
+✅ Better UX للـ buttons
+✅ Consistent spacing & shadows
+✅ Mobile responsive لكل شي
+
+
+التطبيق صار احترافي وجاهز للاستخدام! 🚀
+
+
+
+تقدر الحين تجرب:
+
+فحص منتج جديد وشوف الـ loading animation
+شراء رصيد أو تغيير الخطة وشوف الـ toast notifications
+دخول على البدائل من صفحة النتائج
+تفعيل/إيقاف التنبيهات في الإعدادات
+
+
+كل شي شغال بطريقة سلسة مع دعم كامل للـ RTL والعربي! 🎨
+
+settings.tsx
+                onClick={() => {
+                  const newValue = !pushNotifications;
+                  setPushNotifications(newValue);
+                  handleToggleNotification(
+                    "إشعارات الدفع",
+                    newValue,
+                  );
+                }}
+                className={`relative w-14 h-8 rounded-full transition-colors ${
+                  pushNotifications
+                    ? "bg-[#16A34A]"
+                    : "bg-gray-300"
+                }`}
+              >
+                <div
+                  className={`absolute top-1 w-6 h-6 bg-white rounded-full transition-transform ${
+                    pushNotifications ? "right-1" : "right-7"
+                  }`}
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Account Management Section */}
+        <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-6 lg:p-8">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-12 h-12 rounded-2xl bg-[#DC2626]/10 flex items-center justify-center">
+              <Trash2 className="w-6 h-6 text-[#DC2626]" />
+            </div>
+            <h2 className="text-[#111827]">إدارة الحساب</h2>
+          </div>
+
+          <div className="space-y-4">
+            <p className="text-[#6B7280]">
+              حذف حسابك سيؤدي إلى فقدان جميع بياناتك وفحوصاتك
+              بشكل نهائي. هذا الإجراء لا يمكن التراجع عنه.
+            </p>
+
+            <button
+              onClick={handleDeleteAccount}
+              className="px-6 py-3 bg-[#DC2626] text-white rounded-2xl hover:bg-[#B91C1C] transition-all flex items-center gap-2"
+            >
+              <Trash2 className="w-5 h-5" />
+              <span>حذف الحساب</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="flex min-h-screen bg-[#F3F4F6]">
+      <Sidebar
+        currentPage="settings"
+        onNavigate={onNavigate}
+        onLogout={onLogout}
+        isMobile={isMobile}
+      />
+      <div className="flex-1 overflow-auto">{content}</div>
+    </div>
+  );
+}
